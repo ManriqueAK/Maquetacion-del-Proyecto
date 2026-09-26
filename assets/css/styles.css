@@ -257,11 +257,12 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-top: 75px;
 }
 
 .imagen-login {
-    width: 400px;
-    height: 450px;
+    width: 600px;
+    height: 650px;
     background: #432918;
     display: flex;
     justify-content: center;
@@ -269,15 +270,15 @@ body {
 }
 
 .imagen-login img {
-    width: 250px;
-    height: 350px;
+    width: 450px;
+    height: 550px;
     object-fit: cover;
     display: block;
 }
 
 .ingreso {
-    width: 400px;
-    height: 450px;
+    width: 600px;
+    height: 650px;
     background: #432918;
     padding: 20px 27px;
     color: #d8c0aa;
@@ -285,9 +286,9 @@ body {
 }
 
 .ingreso h1 {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 25px;
+    font-size: 40px;
     color: #7d6452;
 }
 
@@ -297,23 +298,23 @@ body {
 
 .ingreso input {
     width: 100%;
-    height: 35px;
+    height: 55px;
     border: none;
     outline: none;
     background: #f4f2ed;
     padding: 5px 7px;
-    margin-bottom: 10px;
-    font-size: 12px;
+    margin-bottom: 30px;
+    font-size: 16px;
     color: #333;
+    margin-top: 10px;
 }
 
 .ingreso .recuperar {
     display: block;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #7d6452;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .ingreso .recuperar:hover {
@@ -321,16 +322,17 @@ body {
 }
 
 .captcha {
-    width: 250px;
-    height: 50px;
+    width: 350px;
+    height: 80px;
     background: #f7f7f7;
     border: 1px solid #d0d0d0;
     display: flex;
     align-items: center;
-    padding: 7px;
+    padding: 7px 15px;
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 14px;
     color: #555;
+    gap: 7px;
 }
 
 .captcha input {
@@ -340,17 +342,19 @@ body {
 }
 
 .ingreso button {
-    width: 100%;
-    height: 40px;
+    display: flex;
+    margin: auto;
+    width: 400px;
+    height: 60px;
     border: none;
     border-radius: 15px;
     background: #d6bba4;
     color: black;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .ingreso button:hover {
@@ -370,27 +374,27 @@ body {
 
 /*PANEL DE CONTROL*/
 .barra-lateral {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 230px;
-    min-height: 100vh;
-}
-
-.main-content {
-    margin-left: 250px;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .sidebar-menu {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     padding: 20px;
     background-color: #c7ab88;
 }
 
 .sidebar-menu img {
     margin: auto;
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .menu-item {
@@ -400,6 +404,112 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 8px;
-    border: 1px solid #dddddd;
     background-color: #432918;
+    margin-bottom: 18px;
+}
+
+.main-content {
+    margin-left: 230px;
+}
+
+.topbar {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.topbar ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.search-input {
+    width: 600px;
+    height: 40px;
+    padding: 10px;
+}
+
+.perfil {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.dashboard-header {
+    display: flex;
+    background-color: #d6bba44d;
+    margin: 20px;
+    padding: 15px;
+}
+
+.welcome-section {
+    display: flex;
+    gap: 20px
+}
+
+.welcome-logo img {
+    margin-left: 10px;
+    width: 120px;
+    margin-top: 20px;
+}
+
+.status-card {
+    display: flex;
+    margin-left: auto;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    height: 140px;
+    align-items: center;
+    justify-self: center;
+    margin-top: 15px;
+    margin-right: 20px;
+    gap: 20px;
+    border: 1px solid green;
+}
+
+.citas-grid {
+    display: flex;
+    gap: 40px;
+    margin-left: 20%;
+}
+
+.citas-hoy {
+    display: flex;
+    background-color: #d6bba477;
+    border: 2px solid #362011;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.citas-semana {
+    display: flex;
+    background-color: #c7d6a43a;
+    border: 2px solid #362011;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.nuevos-clientes {
+    display: flex;
+    background-color: #a4c6d633;
+    border: 2px solid #362011;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.ingresos-mes {
+    display: flex;
+    background-color: #d6a4ab49;
+    border: 2px solid #362011;
+    border-radius: 4px;
+    padding: 15px;
 }
