@@ -4,32 +4,66 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
         <title>Iniciar seisón</title>
     </head>
 
 
-    <body>
+    <body style="background-image: url(assets/images/portada.jpg); background-attachment: fixed; background-position: center; background-size: cover; background-repeat: no-repeat;">
 
-        <header>
-            <nav>
-                <a href="index.html"><img src="assets/images/logo.png.jpg" width="100"></a>
+        <header class="encabezado">
+
+            <a href="index.html" class="logo"><img src="assets/images/logo.jpg" width="60"></a>
+
+            <nav class="menu">
+
+                <ul>
+
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#servicios">SERVICIOS</a></li>
+                    <li><a href="#ubicacion">UBICACIÓN</a></li>
+                    <li><a href="login.html" style="background-color: #d6bba4; color: black; border-radius: 20px;">INICIAR SESIÓN</a></li>
+
+                </ul>
+                
             </nav>
+
         </header>
 
-        <div>
-            <title>Inicia sesión</title>
+        <div class="login-container">
 
-            <form>
-                <label for="correo">Correo electrónico</label>
-                <input type="email" id="correo"><br>
-                <label for="password">Contraseña</label>
-                <input type="password" id="password"><br>
-                <label><a href="#">¿Has olvidado tu contraseña?</a></label><br>
-                <button><a href="panel.html">INGRESAR</a></button>
-            </form>
+            <div class="imagen-login">
+
+                <img src="assets/images/login.png.png" width="300">
+
+            </div>
+
+            <div class="ingreso">
+
+                <h1>Inicia sesión</h1>
+
+                <form>
+
+                    <input type="email" id="correo" placeholder="Correo electrónico" required>
+                    <input type="password" id="password" placeholder="Contraseña" required>
+                    <a href="#" class="recuperar">¿Has olvidado tu contraseña?</a>
+
+                    <div class="captcha">
+
+                        <input type="checkbox" id="robot">
+                        <label for="robot">No soy un robot</label>
+            
+                    </div>
+
+                    <button type="button">
+                        <a href="panel.html">INGRESAR</a>
+                    </button>
+                    
+                </form>
+            
+            </div>
+
         </div>
-        
-        <img src="assets/images/login.png.png" width="300">
 
     </body>
 

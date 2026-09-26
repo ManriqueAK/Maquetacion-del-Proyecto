@@ -4,67 +4,289 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
         <title>Monapp</title>
     </head>
 
 
     <body>
         
-        <section>
 
-            <div>
-                <table border="0">
-                    <tr>
-                        <th><img src="assets/images/hamburguesa.png.jpg" width="50"></th>
-                        <th>
-                            <form>
-                                <input tyoe="text" placeholder="Buscar...">
-                                <button type="submit">Buscar</button>
-                            </form>
-                        </th>
-                        <th><img src="assets/images/noti.png" width="50"></th>
-                        <th><img src="assets/images/help.png" width="50"></th>
-                        <th><img src="">Admin</th>
-                    </tr>
-                </table>
-            </div>
+        <aside class="barra-lateral">
 
-            <div>
-                <a href="index.html"><img src="assets/images/logo.png.jpg" width="100"></a>
-                <table border="0">
-                    <tr>
-                        <th><button>Panel de control</button></th>
-                    </tr>
-                    <tr>
-                        <th><button>Agenda</button></th>
-                    </tr>
-                    <tr>
-                        <th><button>Citas</button></th>
-                    </tr>
-                    <tr>
-                        <th><button>Clientes</button></th>
-                    </tr>
-                    <tr>
-                        <th><button>Asesores</button></th>
-                    </tr>
-                    <tr>
-                        <th><button>Horarios</button></th>
-                    </tr>
-                    <tr>
-                        <th><button>Configuración</button></th>
-                    </tr>
-                </table>
-            </div>
+            <nav class="sidebar-menu">
 
-        </section>
-        
-        <hr>
+                <img src="assets/images/logo.jpg" width="100px">
+                <a href="#" class="menu-item">Panel de control</a>
+                <a href="#" class="menu-item">Agenda</a>
+                <a href="#" class="menu-item">Citas</a>
+                <a href="#" class="menu-item">Clientes</a>
+                <a href="#" class="menu-item">Asesores</a>
+                <a href="#" class="menu-item">Horarios</a>
+                <a href="#" class="menu-item">Configuración</a>
 
-        <section>
+            </nav>
 
-            <p><strong>Panel de control</strong></p>
+        </aside>
 
-        </section>
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <button class="menu-button" type="button">
+                    <span class="menu-button-icon"></span>
+                </button>
+
+                <div class="search-container">
+                    <span class="search-icon"></span>
+                    <input 
+                        type="search" 
+                        class="search-input" 
+                        placeholder="Buscar..."
+                    >
+                    <button class="search-clear" type="button">
+                        &times;
+                    </button>
+                </div>
+
+                <div class="topbar-actions">
+
+                    <button class="topbar-button notification-button" type="button">
+                        <span class="notification-icon"></span>
+                    </button>
+
+                    <button class="topbar-button help-button" type="button">
+                        <span class="help-icon">?</span>
+                    </button>
+
+                    <div class="user-profile">
+
+                        <div class="user-avatar">
+                            <span class="avatar-icon"></span>
+                        </div>
+
+                        <span class="user-name">Admin</span>
+
+                        <span class="user-arrow">▽</span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <section class="dashboard-content">
+
+                <h1 class="page-title">Panel de control</h1>
+
+
+                <!-- ==================== TARJETA DE BIENVENIDA ==================== -->
+                <section class="welcome-card">
+
+                    <div class="welcome-information">
+
+                        <div class="welcome-icon">
+                            <span class="calendar-icon"></span>
+                        </div>
+
+                        <div class="welcome-text">
+                            <h2>Bienvenido, Administrador</h2>
+                            <p>Resumen general</p>
+                        </div>
+
+                    </div>
+
+                    <div class="center-status">
+
+                        <span class="status-indicator"></span>
+
+                        <span class="status-text">
+                            CENTRO ACTIVO
+                        </span>
+
+                    </div>
+
+                </section>
+
+                <section class="statistics">
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon">
+                            <span class="calendar-stat-icon"></span>
+                        </div>
+
+                        <div class="stat-information">
+                            <h3>Citas de hoy</h3>
+                            <strong>8</strong>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon">
+                            <span class="calendar-stat-icon"></span>
+                        </div>
+
+                        <div class="stat-information">
+                            <h3>Citas de la semana</h3>
+                            <strong>32</strong>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon">
+                            <span class="clients-stat-icon"></span>
+                        </div>
+
+                        <div class="stat-information">
+                            <h3>Clientes nuevos</h3>
+                            <strong>12</strong>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon">
+                            <span class="money-stat-icon">$</span>
+                        </div>
+
+                        <div class="stat-information">
+                            <h3>Ingresos del mes</h3>
+                            <strong>$ 3.450.963</strong>
+                        </div>
+
+                    </article>
+
+                </section>
+
+                <section class="quick-actions">
+
+                    <h2 class="section-title">Acciones rápidas</h2>
+
+                    <div class="quick-actions-container">
+
+                        <a href="#" class="quick-action-card">
+
+                            <div class="quick-action-icon">
+                                <span class="new-appointment-icon"></span>
+                            </div>
+
+                            <span class="quick-action-text">
+                                Nueva cita
+                            </span>
+
+                        </a>
+
+
+                        <a href="#" class="quick-action-card">
+
+                            <div class="quick-action-icon">
+                                <span class="new-client-icon"></span>
+                            </div>
+
+                            <span class="quick-action-text">
+                                Nuevo cliente
+                            </span>
+
+                        </a>
+
+
+                        <a href="#" class="quick-action-card">
+
+                            <div class="quick-action-icon">
+                                <span class="services-icon"></span>
+                            </div>
+
+                            <span class="quick-action-text">
+                                Ver servicios
+                            </span>
+
+                        </a>
+
+
+                        <a href="#" class="quick-action-card">
+
+                            <div class="quick-action-icon">
+                                <span class="schedule-icon"></span>
+                            </div>
+
+                            <span class="quick-action-text">
+                                Configurar horarios
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+                <section class="upcoming-appointments">
+
+                    <h2 class="section-title">
+                        Próximas citas
+                    </h2>
+
+                    <div class="appointments-table-container">
+
+                        <table class="appointments-table">
+
+                            <thead>
+                                <tr>
+                                    <th>HORA</th>
+                                    <th>CLIENTE</th>
+                                    <th>SERVICIO</th>
+                                    <th>ASESOR</th>
+                                    <th>ESTADO</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>09:00</td>
+                                    <td>Nombre del cliente</td>
+                                    <td>Alisado de keratina</td>
+                                    <td>Asesor</td>
+                                    <td>
+                                        <span class="appointment-status">
+                                            Confirmada
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>10:30</td>
+                                    <td>Nombre del cliente</td>
+                                    <td>Tratamiento capilar</td>
+                                    <td>Asesor</td>
+                                    <td>
+                                        <span class="appointment-status">
+                                            Pendiente
+                                        </span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+
+        </main>
+
         
     </body>
 
