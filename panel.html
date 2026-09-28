@@ -5,6 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/styles.css">
         <title>Monapp</title>
     </head>
@@ -35,25 +36,17 @@
             <header class="topbar">
 
                 <ul>
-
                     <li><img src="assets/images/hamburguesa.png.jpg" width="60px"></li>
-
                     <li>
                         <div class="search-container">
                             <input type="search" class="search-input" placeholder="Buscar...">
                         </div>
                     </li>
-
                     <li><img src="assets/images/noti.png" width="60px"></li>
-
                     <li><img src="assets/images/help.png" width="60px"></li>
-                    
-                    <li>
-                        
+                    <li>                     
                     </li>
-
                     <li class="perfil">
-
                         <img src="assets/images/perfil.png" width="60px">
                         <div class="user-profile">
                             <div class="user-avatar">
@@ -62,10 +55,7 @@
                             <span class="user-name">Admin</span>
                             <span class="user-arrow">▽</span>
                         </div>
-
                     </li>
-
-
                 </ul>
 
             </header>
@@ -91,16 +81,15 @@
                 </div>
 
                 <div class="status-card">
-                    <div class="status-icon">
-
-                        <span></span>
-                    </div>
 
                     <div class="status-info">
-                        <strong>Centro activo</strong>
-                        <p>Todo funcionando correctamente</p>
+                        <ul>
+                            <li><img src="assets/images/activo.png"></li>
+                            <li><strong style="color: #0D4106;">Centro activo</strong></li>
+                        </ul>
+                        <p style="color: #696969">Todo funcionando correctamente</p>
                     </div>
-
+                    
                 </div>
 
             </section>
@@ -108,153 +97,92 @@
             <section class="citas-grid">
 
                 <article class="citas-hoy">
-
-                    <div class="stat-icon">
-                        <span>▣</span>
-                    </div>
-
                     <div class="stat-content">
-                        <p>Citas de hoy</p>
+                        <ul>
+                            <li><img src="assets/images/calendario.png"></li>
+                            <li><p>Citas de hoy</p></li>
+                        </ul>
                         <h2>8</h2>
-
-                        <div class="stat-change positive">
-                            ↑ <strong>+2</strong>
-                            <span>vs. ayer</span>
-                        </div>
                     </div>
-
                 </article>
-
 
                 <article class="citas-semana">
-
-                    <div class="stat-icon">
-                        <span>▣</span>
-                    </div>
-
                     <div class="stat-content">
-                        <p>Citas de la semana</p>
+                        <ul>
+                            <li><img src="assets/images/sietedias.png"></li>
+                            <li><p>Citas de la semana</p></li>
+                        </ul>
                         <h2>32</h2>
-
-                        <div class="stat-change positive">
-                            ↑ <strong>+6</strong>
-                            <span>vs. semana anterior</span>
-                        </div>
                     </div>
-
                 </article>
-
 
                 <article class="nuevos-clientes">
-
-                    <div class="stat-icon">
-                        <span>♟</span>
-                    </div>
-
                     <div class="stat-content">
-                        <p>Clientes nuevos</p>
+                        <ul>
+                            <li><img src="assets/images/clientes.png"></li>
+                            <li><p>Clientes nuevos</p></li>
+                        </ul>
                         <h2>12</h2>
-
-                        <div class="stat-change positive">
-                            ↑ <strong>+4</strong>
-                            <span>vs. mes anterior</span>
-                        </div>
                     </div>
-
                 </article>
-
 
                 <article class="ingresos-mes">
-
-                    <div class="stat-icon">
-                        <span>$</span>
-                    </div>
-
                     <div class="stat-content">
-                        <p>Ingresos del mes</p>
+                        <ul>
+                            <li><img src="assets/images/dinero.png"></li>
+                            <li><p>Ingresos del mes</p></li>
+                        </ul>
                         <h2>$ 3.450.963</h2>
-
-                        <div class="stat-change positive">
-                            ↑ <strong>+18%</strong>
-                            <span>vs. mes anterior</span>
-                        </div>
                     </div>
-
                 </article>
 
             </section>
 
-            <section class="quick-actions-section">
-
+            <section class="acciones-rapidas">
                 <h2 class="section-title">Acciones rápidas</h2>
 
-                <div class="quick-actions-grid">
+                <div class="rapidas-grid">
 
-                    <button class="quick-action action-orange">
-                        <span class="quick-icon">▣+</span>
+                    <div class="accion-rapida" style="background-color: #f4e8dc;">
+                        <ul>
+                            <li><img src="assets/images/newcita.png"></li>
+                            <li><h3 class="titulos-rapidas">Nueva cita</h3></li>
+                        </ul>
+                    </div>
 
-                        <span class="quick-text">
-                            Nueva cita
-                        </span>
+                    <div class="accion-rapida" style="background-color: #ede0e0;">
+                        <ul>
+                            <li><img src="assets/images/cliente.png"></li>
+                            <li><h3 class="titulos-rapidas">Nuevo cliente</h3></li>
+                        </ul>
+                    </div>
 
-                        <span class="quick-arrow">›</span>
-                    </button>
+                    <div class="accion-rapida" style="background-color: #e3e5dc;">
+                        <ul>
+                            <li><img src="assets/images/tijera.png"></li>
+                            <li><h3 class="titulos-rapidas">Ver servicios</h3></li>
+                        </ul>
+                    </div>
 
-
-                    <button class="quick-action action-pink">
-                        <span class="quick-icon">♙+</span>
-
-                        <span class="quick-text">
-                            Nuevo cliente
-                        </span>
-
-                        <span class="quick-arrow">›</span>
-                    </button>
-
-
-                    <button class="quick-action action-green">
-                        <span class="quick-icon">✂</span>
-
-                        <span class="quick-text">
-                            Ver servicios
-                        </span>
-
-                        <span class="quick-arrow">›</span>
-                    </button>
-
-
-                    <button class="quick-action action-purple">
-                        <span class="quick-icon">◷</span>
-
-                        <span class="quick-text">
-                            Configurar horarios
-                        </span>
-
-                        <span class="quick-arrow">›</span>
-                    </button>
+                    <div class="accion-rapida" style="background-color: #e2dee4;">
+                        <ul>
+                            <li><img src="assets/images/hora.png"></li>
+                            <li><h3 class="titulos-rapidas">Configurar horarios</h3></li>
+                        </ul>
+                    </div>
 
                 </div>
 
             </section>
 
-            <section class="appointments-section">
+            <section class="citas-section">
 
-                <div class="appointments-header">
-
+                <div class="citas-header">
                     <h2 class="section-title">Próximas citas</h2>
-
-                    <a href="#" class="view-all">
-                        Ver todas
-                        <span>→</span>
-                    </a>
-
                 </div>
 
-
-                <div class="appointments-table-container">
-
-                    <table class="appointments-table">
-
+                <div class="citas-table-container">
+                    <table class="citas-table">
                         <thead>
                             <tr>
                                 <th>HORA</th>
@@ -262,152 +190,100 @@
                                 <th>SERVICIO</th>
                                 <th>ASESOR</th>
                                 <th>ESTADO</th>
-                                <th></th>
                             </tr>
                         </thead>
 
                         <tbody>
-
                             <tr>
                                 <td>09:00 a.m.</td>
-
                                 <td>
                                     <div class="client">
-                                        <span class="client-avatar">●</span>
+                                        <img src="assets/images/perfil.png" width="30px">
                                         <span>Laura Martínez</span>
                                     </div>
                                 </td>
-
                                 <td>Alisado de keratina</td>
-
                                 <td>Daniela R.</td>
-
                                 <td>
-                                    <span class="appointment-status confirmed">
+                                    <span class="confirmada">
                                         Confirmada
                                     </span>
                                 </td>
-
-                                <td>
-                                    <button class="more-button">⋮</button>
-                                </td>
                             </tr>
-
-
                             <tr>
                                 <td>11:30 a.m.</td>
-
                                 <td>
                                     <div class="client">
-                                        <span class="client-avatar">●</span>
+                                        <img src="assets/images/perfil.png" width="30px">
                                         <span>Valentina Torres</span>
                                     </div>
                                 </td>
-
                                 <td>Corte + Tratamiento</td>
-
                                 <td>Sofía G.</td>
-
                                 <td>
-                                    <span class="appointment-status confirmed">
+                                    <span class="confirmada">
                                         Confirmada
                                     </span>
                                 </td>
-
-                                <td>
-                                    <button class="more-button">⋮</button>
-                                </td>
                             </tr>
-
-
                             <tr>
                                 <td>02:00 p.m.</td>
-
                                 <td>
                                     <div class="client">
-                                        <span class="client-avatar">●</span>
+                                        <img src="assets/images/perfil.png" width="30px">
                                         <span>Camila Rojas</span>
                                     </div>
                                 </td>
-
                                 <td>Coloración</td>
-
                                 <td>Daniela R.</td>
-
                                 <td>
-                                    <span class="appointment-status pending">
+                                    <span class="pendiente">
                                         Pendiente
                                     </span>
                                 </td>
-
-                                <td>
-                                    <button class="more-button">⋮</button>
-                                </td>
                             </tr>
-
-
                             <tr>
                                 <td>04:30 p.m.</td>
-
                                 <td>
                                     <div class="client">
-                                        <span class="client-avatar">●</span>
+                                        <img src="assets/images/perfil.png" width="30px">
                                         <span>Alejandra Castro</span>
                                     </div>
                                 </td>
-
                                 <td>Manicura</td>
-
                                 <td>Sofía G.</td>
-
                                 <td>
-                                    <span class="appointment-status confirmed">
+                                    <span class="confirmada">
                                         Confirmada
                                     </span>
                                 </td>
-
-                                <td>
-                                    <button class="more-button">⋮</button>
-                                </td>
                             </tr>
-
-
                             <tr>
                                 <td>06:00 p.m.</td>
-
                                 <td>
                                     <div class="client">
-                                        <span class="client-avatar client-avatar-brown">●</span>
+                                        <img src="assets/images/perfil.png" width="30px">
                                         <span>Isabella Gómez</span>
                                     </div>
                                 </td>
-
                                 <td>Corte de puntas</td>
-
                                 <td>Daniela R.</td>
-
                                 <td>
-                                    <span class="appointment-status pending">
+                                    <span class="pendiente">
                                         Pendiente
                                     </span>
                                 </td>
-
-                                <td>
-                                    <button class="more-button">⋮</button>
-                                </td>
                             </tr>
-
                         </tbody>
-
                     </table>
-
                 </div>
 
             </section>
 
         </main>
 
-        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
     </body>
 
 </html>

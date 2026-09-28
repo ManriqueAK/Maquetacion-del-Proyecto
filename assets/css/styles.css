@@ -466,50 +466,388 @@ body {
     margin-left: auto;
     border-radius: 10px;
     background-color: white;
-    padding: 20px;
-    height: 140px;
-    align-items: center;
-    justify-self: center;
+    height: 120px;
     margin-top: 15px;
     margin-right: 20px;
-    gap: 20px;
     border: 1px solid green;
+    width: 400px;
+}
+
+.status-card p {
+    margin-left: 25px;
+}
+
+.status-card img {
+    width: 50px;
+}
+
+.status-info ul {
+    list-style: none;
+    gap: 15px;
+    align-items: center;
+    display: flex;
+    margin-left: -10px;
+    margin-top: 10px;
 }
 
 .citas-grid {
     display: flex;
     gap: 40px;
-    margin-left: 20%;
+    margin-left: 5%;
+    margin-top: 40px;
 }
 
 .citas-hoy {
     display: flex;
-    background-color: #d6bba477;
+    background-color: #f4e8dc;
     border: 2px solid #362011;
     border-radius: 4px;
     padding: 15px;
+    width: 350px;
 }
 
 .citas-semana {
     display: flex;
-    background-color: #c7d6a43a;
+    background-color: #ede0e0;
     border: 2px solid #362011;
     border-radius: 4px;
     padding: 15px;
+    width: 350px;
 }
 
 .nuevos-clientes {
     display: flex;
-    background-color: #a4c6d633;
+    background-color: #e3e5dc;
     border: 2px solid #362011;
     border-radius: 4px;
     padding: 15px;
+    width: 350px;
 }
 
 .ingresos-mes {
     display: flex;
-    background-color: #d6a4ab49;
+    background-color: #e2dee4;
     border: 2px solid #362011;
     border-radius: 4px;
     padding: 15px;
+    width: 350px;
+}
+
+.section-title {
+    margin: 25px;
+    color: #362011;
+}
+
+.rapidas-grid {
+    margin: 20px;
+    display: flex;
+    gap: 40px;
+    margin-left: 5%;
+}
+
+.accion-rapida {
+    width: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    border: 2px solid #362011;
+}
+
+.accion-rapida h3 {
+    color: #362011;
+    font-size: 20px;
+}
+
+.accion-rapida img {
+    width: 80px;
+}
+
+.accion-rapida ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.stat-content p {
+    font-size: 20px;
+}
+
+.stat-content h2 {
+    font-size: 40px;
+}
+
+.stat-content img {
+    width: 80px;
+}
+
+.stat-content ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.citas-section {
+    margin-top: 25px;
+}
+
+.citas-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 4px 12px;
+}
+
+.citas-table-container {
+    width: 100%;
+    overflow-x: auto;
+    background: white;
+    border: 1px solid #e6e2de;
+    border-radius: 13px;
+    box-shadow: 0 4px 15px rgba(40, 30, 20, 0.04);
+}
+
+.citas-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.citas-table thead {
+    background: #fcfbfa;
+}
+
+.citas-table th {
+    padding: 13px 22px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    color: #514b47;
+    letter-spacing: 0.2px;
+    border-bottom: 1px solid #e9e5e1;
+}
+
+.citas-table td {
+    padding: 10px 22px;
+    height: 49px;
+    color: #38322e;
+    border-bottom: 1px solid #eeeae6;
+    white-space: nowrap;
+}
+
+.citas-table tbody tr:hover {
+    background: #faf8f5;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.confirmada {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 99px;
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #d6eee3;
+    color: #28715a;
+}
+
+.pendiente {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 99px;
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #ffe8bb;
+    color: #a86808;
+}
+
+/*breakpoints*/
+
+@media (max-width: 992px) {
+    .servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .encabezado {
+        gap: 20px;
+    }
+    .menu ul {
+        gap: 15px;
+    }
+    .login-container {
+        padding: 20px;
+    }
+    .imagen-login,
+    .ingreso {
+        width: 50%;
+    }
+    .imagen-login img {
+        width: 80%;
+        height: auto;
+    }
+    .ingreso button {
+        width: 80%;
+    }
+    .citas-grid {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .citas-hoy,
+    .citas-semana,
+    .nuevos-clientes,
+    .ingresos-mes {
+        width: calc(50% - 20px);
+    }
+    .rapidas-grid {
+        flex-wrap: wrap;
+    }
+    .accion-rapida {
+        width: calc(50% - 20px);
+    }
+    .search-input {
+        width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .encabezado {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+    .menu ul {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .menu a {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    .primera-parte {
+        min-height: 80vh;
+        padding: 30px;
+    }
+    .primera-parte h1 {
+        font-size: 35px;
+    }
+    .primera-parte p {
+        font-size: 13px;
+    }
+    .servicios {
+        grid-template-columns: 1fr;
+        padding: 50px 20px;
+    }
+    .servicios h2 {
+        font-size: 35px;
+    }
+    .ficha img {
+        height: 280px;
+    }
+    .ubicacion {
+        padding: 30px 20px;
+    }
+    .ubicacion h2 {
+        font-size: 30px;
+    }
+    .ubicacion iframe {
+        height: 300px;
+    }
+    .footer-contenido {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .login-container {
+        flex-direction: column;
+        margin-top: 30px;
+        padding: 20px;
+    }
+    .imagen-login,
+    .ingreso {
+        width: 100%;
+        height: auto;
+    }
+    .imagen-login {
+        padding: 30px;
+    }
+    .imagen-login img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+    .ingreso {
+        padding: 30px 20px;
+    }
+    .ingreso h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    .captcha {
+        width: 100%;
+    }
+    .ingreso button {
+        width: 100%;
+    }
+    .barra-lateral {
+        width: 70px;
+    }
+    .sidebar-menu {
+        padding: 10px;
+        gap: 15px;
+    }
+    .sidebar-menu img {
+        width: 50px;
+    }
+    .menu-item {
+        font-size: 0;
+        padding: 15px 5px;
+    }
+    .main-content {
+        margin-left: 70px;
+    }
+    .topbar {
+        margin-left: 10px;
+    }
+    .topbar ul {
+        gap: 10px;
+    }
+    .search-input {
+        width: 150px;
+    }
+    .dashboard-header {
+        flex-direction: column;
+        margin: 10px;
+    }
+    .status-card {
+        width: 100%;
+        margin: 20px 0 0;
+    }
+    .citas-grid {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .citas-hoy,
+    .citas-semana,
+    .nuevos-clientes,
+    .ingresos-mes {
+        width: 100%;
+    }
+    .rapidas-grid {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .accion-rapida {
+        width: 100%;
+    }
+    .citas-table-container {
+        overflow-x: auto;
+    }
 }
