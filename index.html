@@ -12,7 +12,7 @@
     
     <body style="background-image: url(assets/images/portada.jpg); background-attachment: fixed; background-position: center; background-size: cover; background-repeat: no-repeat;">
 
-        <header class="encabezado">
+        <header class="encabezado" id="encabezado">
 
             <a href="index.html" class="logo"><img src="assets/images/logo.jpg" width="60"></a>
 
@@ -20,10 +20,10 @@
 
                 <ul>
 
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#servicios">SERVICIOS</a></li>
-                    <li><a href="#ubicacion">UBICACIÓN</a></li>
-                    <li><a href="login.html" style="background-color: #d6bba4; color: black; border-radius: 20px;">INICIAR SESIÓN</a></li>
+                    <li><button>INICIO</button></li>
+                    <li><button>SERVICIOS</button></li>
+                    <li><button>UBICACIÓN</button></li>
+                    <li><button id="inicioSesion">NICIAR SESIÓN</button></li>
 
                 </ul>
                 
@@ -39,35 +39,67 @@
                 <a href="login.html" class="boton-agenda"><button>AGENDAR CITA</button></a>
             </div>
 
+            
             <div class="servicios" id="servicios">
 
                 <h2>Servicios</h2>
 
-                <div class="ficha">
-                    <h3>Alisado de keratina</h3>
-                    <img src="assets/images/alisado.jpg" width="300">
-                    <p>Brillo, suavidad y control de frizz</p>
-                </div>
-                
-                <div class="ficha">
-                    <h3>Detox capilar</h3>
-                    <img src="assets/images/botox.jpg" width="300">
-                    <p>Repara y rejuvenece</p>
+                <div class="carruselServicios">
+
+                    <button id="anterior"><</button>
+
+                    <div class="carrusel-contenedor">
+
+                        <div id="carrusel">
+
+                            <div class="ficha">
+                                <h3>Alisado de keratina</h3>
+                                <img src="assets/images/alisado.jpg" alt="Alisado de keratina">
+                                <p>Brillo, suavidad y control de frizz</p>
+                            </div>
+
+                            <div class="ficha">
+                                <h3>Spa capilar</h3>
+                                <img src="assets/images/spa.png" alt="Spa capilar">
+                                <p>Relajación y cuidado profundo que limpia y revitaliza tu cuero cabelludo</p>
+                            </div>
+
+                            <div class="ficha">
+                                <h3>Reposición de aminoácidos</h3>
+                                <img src="assets/images/amino.png" alt="Reposición de aminoácidos">
+                                <p>Devuelve la fuerza, resistencia y elasticidad perdidas</p>
+                            </div>
+
+                            <div class="ficha">
+                                <h3>Detox capilar</h3>
+                                <img src="assets/images/botox.jpg" alt="Detox capilar">
+                                <p>Repara y rejuvenece el cuero cabelludo</p>
+                            </div>
+
+                            <div class="ficha">
+                                <h3>Hidratación profunda</h3>
+                                <img src="assets/images/hidratacion.jpg" alt="Hidratación profunda">
+                                <p>Nutrición, brillo y suavidad intensos</p>
+                            </div>
+
+                            <div class="ficha">
+                                <h3>Reconexión molecular</h3>
+                                <img src="assets/images/reconexion.png" alt="Reconexión molecular">
+                                <p>Nutrición, reparación y sellado del cabello</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button id="siguiente">></button>
+
                 </div>
 
-                <div class="ficha">
-                    <h3>Hidratación profunda</h3>
-                    <img src="assets/images/hidratacion.jpg" width="300">
-                    <p>Nutrición, brillo y suavidad</p>
-                </div>
-
-                <div class="ficha">
-                    <h3>Reconexión molecular</h3>
-                    <img src="assets/images/reconexion.png">
-                    <p>Nutrición, reparación y sellado</p>
-                </div>
+                <div id="indicadores"></div>
 
             </div>
+
 
             <div class="ubicacion" id="ubicacion">
 
@@ -111,6 +143,7 @@
 
         </footer>
 
+        <script src="assets/scripts/index.js"></script> 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
     </body>

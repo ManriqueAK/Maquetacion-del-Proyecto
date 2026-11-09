@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/panel.css">
+        <link rel="stylesheet" href="assets/css/clientes.css">
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <title>Clientes | Monapp</title>
+    </head>
+
+    <body>
+
+        <aside id="barra-lateral">
+
+            <center><img src="assets/images/logo.jpg" id="logoMona" width="150px"></center>
+
+            <ul>
+                <li>
+                    <a href="panel.html"><i data-lucide="house" style="margin-right: 15px; width: 30px; height: 30px;"></i>Panel de control</a>
+                </li>
+
+                <li>
+                    <a href="#"><i data-lucide="book-search" style="margin-right: 15px; width: 30px; height: 30px;"></i>Agenda</a>
+                </li>
+
+                <li>
+                    <a href="#"><i data-lucide="calendar-plus" style="margin-right: 15px; width: 30px; height: 30px;"></i>Citas</a>
+                </li>
+
+                <li>
+                    <a href="clientes.html"><i data-lucide="users" style="margin-right: 15px; width: 30px; height: 30px;"></i>Clientes</a>
+                </li>
+
+                <li>
+                    <a href="#"><i data-lucide="scissors" style="margin-right: 15px; width: 30px; height: 30px;"></i>Asesores</a>
+                </li>
+
+                <li>
+                    <a href="#"><i data-lucide="clipboard-clock" style="margin-right: 15px; width: 30px; height: 30px;"></i>Horarios</a>
+                </li>
+            </ul>
+
+        </aside>
+
+        <main id="contenidoPrincipal">
+
+            <header class="topbar">
+                <ul>
+                    <li>
+                        <button class="btn-menu" id="btnMenu" type="button" aria-label="Ocultar o mostrar menú" aria-expanded="true">
+                            <img src="assets/images/hamburguesa.png.jpg" width="60" alt="Menú">
+                        </button>
+                    </li>
+
+                    <li>
+                        <div class="search-container">
+                            <input type="search" class="search-input" placeholder="Buscar...">
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="assets/images/noti.png" width="60" alt="Notificaciones">
+                    </li>
+
+                    <li>
+                        <img src="assets/images/help.png" width="60" alt="Ayuda">
+                    </li>
+
+                    <li class="perfil">
+
+                        <img src="assets/images/perfil.png" width="60px">
+
+                        <div class="user-profile" id="userProfile">
+
+                            <div class="user-avatar">
+                                <span class="avatar-icon"></span>
+                            </div>
+
+                            <span class="user-name">Admin</span>
+
+                            <span class="user-arrow" id="userArrow">▽</span>
+
+                        </div>
+
+                        <div class="menu-perfil" id="menuPerfil">
+
+                            <a href="configuracion.html">Configuracion</a>
+                            <a href="login.html">Salir</a>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </header>
+
+            <hr>
+
+            <section class="page-content">
+
+                <div class="page-heading">
+                    <div>
+                        <h1>Clientes</h1>
+                    </div>
+
+                    <button class="btn-clientes" id="abrirRegistro" type="button">
+                        + Nuevo cliente
+                    </button>
+                </div>
+
+                <div class="stats-grid">
+
+                    <div class="panel-card">
+                        <span class="stat-mini">Total de clientes</span>
+                        <strong class="stat-number">248</strong>
+                    </div>
+
+                    <div class="panel-card">
+                        <span class="stat-mini">Clientes nuevos este mes</span>
+                        <strong class="stat-number">12</strong>
+                    </div>
+
+                    <div class="panel-card">
+                        <span class="stat-mini">Clientes frecuentes</span>
+                        <strong class="stat-number">86</strong>
+                    </div>
+
+                </div>
+
+                <div class="panel-card">
+
+                    <div class="filters-grid">
+
+                        <input type="search" id="form-control" placeholder="Buscar por nombre, teléfono o correo...">
+
+                        <select id="form-select-tipo">
+                            <option value="todos">Todos los clientes</option>
+                            <option value="Frecuente">Frecuentes</option>
+                            <option value="Nuevo">Nuevos</option>
+                        </select>
+
+                        <select id="form-select-antiguo">
+                            <option>Ordenar por nombre</option>
+                            <option>Más recientes</option>
+                            <option>Más antiguos</option>
+                        </select>
+
+                    </div>
+
+                    <div class="tabla-clientes">
+
+                        <table class="tabla">
+
+                            <thead>
+                                <tr>
+                                    <th>CLIENTE</th>
+                                    <th>TELÉFONO</th>
+                                    <th>CORREO ELECTRÓNICO</th>
+                                    <th>TIPO</th>
+                                    <th>ACCIONES</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="listaClientes">
+
+                                <tr>
+                                    <td>
+                                        <span class="avatar-circle">AT</span>
+                                        <strong>Ángela Torres</strong>
+                                    </td>
+                                    <td>300 456 7890</td>
+                                    <td>angeña@gmail.com</td>
+                                    <td>
+                                        <span class="status status-pendiente">Nuevo</span>
+                                    </td>
+                                    <td class="actions">
+                                        <button class="btn-opciones" type="button">Ver</button>
+                                        <button class="btn-opciones" type="button">Editar</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span class="avatar-circle">LM</span>
+                                        <strong>Laura Martínez</strong>
+                                    </td>
+                                    <td>300 456 7890</td>
+                                    <td>laura@gmail.com</td>
+                                    <td>
+                                        <span class="status status-confirmada">Frecuente</span>
+                                    </td>
+                                    <td class="actions">
+                                        <button class="btn-opciones" type="button">Ver</button>
+                                        <button class="btn-opciones" type="button">Editar</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span class="avatar-circle">VT</span>
+                                        <strong>Valentina Torres</strong>
+                                    </td>
+                                    <td>310 234 5678</td>
+                                    <td>valentina@gmail.com</td>
+                                    <td>
+                                        <span class="status status-confirmada">Frecuente</span>
+                                    </td>
+                                    <td class="actions">
+                                        <button class="btn-opciones" type="button">Ver</button>
+                                        <button class="btn-opciones" type="button">Editar</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span class="avatar-circle">CR</span>
+                                        <strong>Camila Rojas</strong>
+                                    </td>
+                                    <td>320 987 6543</td>
+                                    <td>camila@gmail.com</td>
+                                    <td>
+                                        <span class="status status-pendiente">Nuevo</span>
+                                    </td>
+                                    <td class="actions">
+                                        <button class="btn-opciones" type="button">Ver</button>
+                                        <button class="btn-opciones" type="button">Editar</button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span class="avatar-circle">IG</span>
+                                        <strong>Isabella Gómez</strong>
+                                    </td>
+                                    <td>301 555 1234</td>
+                                    <td>isabella@gmail.com</td>
+                                    <td>
+                                        <span class="status status-pendiente">Nuevo</span>
+                                    </td>
+                                    <td class="actions">
+                                        <button class="btn-opciones" type="button">Ver</button>
+                                        <button class="btn-opciones" type="button">Editar</button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div class="pagination-container">
+
+                        <span class="claros">
+                            Mostrando 1-5 de 248 clientes
+                        </span>
+
+                        <nav>
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#" style="color: #bbb; pointer-events: none;">Anterior</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" style="background-color: #362011; border-color: #362011; color: #fff;">1</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Siguiente</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <script src="assets/scripts/clientes.js"></script>
+        <script src="assets/scripts/panel.js"></script>
+        <script>
+            lucide.createIcons();
+        </script>
+
+    </body>
+</html>
