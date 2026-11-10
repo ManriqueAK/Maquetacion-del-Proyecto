@@ -311,6 +311,24 @@ body {
     background-color: #e2cccc;
 }
 
+.verServicios {
+    background-color: #e3e5dc;;
+    cursor: pointer;
+}
+
+.verServicios:hover {
+    background-color: #dbe4b9;;
+}
+
+.configHorarios {
+    background-color: #e2dee4;
+    cursor: pointer;
+}
+
+.configHorarios:hover {
+    background-color: #cfbdd8;
+}
+
 .stat-content p {
     font-size: 20px;
 }

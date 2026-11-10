@@ -54,4 +54,14 @@ citasSemana.addEventListener("click", function () {
 const nuevaCita = document.getElementById("nuevaCita");
 nuevaCita.addEventListener("click" , function () {
     window.location.href = "citas.html";
-})
+});
+
+const horarios = document.getElementById("configHorarios");
+horarios.addEventListener("click" , function () {
+    window.location.href = "horario.html";
+});
+
+const verServicios = document.getElementById("verServicios");
+verServicios.addEventListener("click" , function () {
+    window.location.href = "asesores.html";
+});

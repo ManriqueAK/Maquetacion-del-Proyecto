@@ -139,10 +139,12 @@ abrirRegistro.addEventListener("click", function () {
     });
 });
 
+
 if (sessionStorage.getItem("abrirFormularioCliente") === "true") {
     sessionStorage.removeItem("abrirFormularioCliente");
     abrirRegistro.click();
 }
+
 
 const buscarCliente = document.getElementById("form-control");
 const listaClientes = document.getElementById("listaClientes");
