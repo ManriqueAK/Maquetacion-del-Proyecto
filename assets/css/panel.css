@@ -56,7 +56,7 @@ body {
     color: white;
 }
 
-#contenidoPrincipal {
+.main-content {
     margin-left: 270px;
 }
 

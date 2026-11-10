@@ -11,12 +11,6 @@ if (btnMenu && barraLateral && mainContent) {
     });
 }
 
-const nuevoCliente = document.getElementById("nuevosClientes")
-nuevoCliente.addEventListener("click", function () {
-    window.location.href = "clientes.html";
-})
-
-//
 
 const userProfile = document.getElementById("userProfile");
 const menuPerfil = document.getElementById("menuPerfil");
@@ -42,3 +36,7 @@ nuevoClienteAccion.addEventListener("click" , function () {
     window.location.href="clientes.html"
 });
 
+const nuevoCliente = document.getElementById("nuevosClientes")
+nuevoCliente.addEventListener("click", function () {
+    window.location.href = "clientes.html";
+})
