@@ -39,4 +39,19 @@ nuevoClienteAccion.addEventListener("click" , function () {
 const nuevoCliente = document.getElementById("nuevosClientes")
 nuevoCliente.addEventListener("click", function () {
     window.location.href = "clientes.html";
+});
+
+const citasHoy = document.getElementById("citasHoy")
+citasHoy.addEventListener("click", function () {
+    window.location.href = "citas.html";
+});
+
+const citasSemana = document.getElementById("citasSemana")
+citasSemana.addEventListener("click", function () {
+    window.location.href = "citas.html";
+});
+
+const nuevaCita = document.getElementById("nuevaCita");
+nuevaCita.addEventListener("click" , function () {
+    window.location.href = "citas.html";
 })
