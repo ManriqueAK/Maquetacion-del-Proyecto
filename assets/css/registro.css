@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    gap: 60px;
+    margin-top: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul {
+    width: 100%;
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu button {
+    border-radius: 20px;
+    background-color: #362011;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+.menu button:hover {
+    background-color: #9f856d;
+    color: black;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.ingreso {
+    width: 600px;
+    min-height: 650px;
+    max-height: 100%;
+    background: #432918;
+    padding: 20px 27px;
+    color: #d8c0aa;
+    border-radius: 20px;
+}
+
+.ingreso h1 {
+    margin-bottom: 50px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 40px;
+    color: #7d6452;
+}
+
+.ingreso form {
+    width: 100%;
+}
+
+.ingreso input {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    background: #f4f2ed;
+    padding: 10px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #333;
+    border-radius: 10px;
+}
+
+.captcha {
+    width: 350px;
+    height: 80px;
+    background: #f7f7f7;
+    border: 1px solid #d0d0d0;
+    display: flex;
+    align-items: center;
+    padding: 7px 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+    gap: 7px;
+    border-radius: 10px;
+}
+
+.captcha input {
+    width: 25px;
+    height: 25px;
+    margin: 0 7px 0 0;
+}
+
+.ingreso button {
+    display: flex;
+    margin: auto;
+    width: 300px;
+    height: 60px;
+    border: 3px solid #362011;
+    border-radius: 15px;
+    background: #d6bba4;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingreso button:hover {
+    background: #704d35;
+    color: white;
+    transform: scale(1.01);
+}
